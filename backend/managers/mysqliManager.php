@@ -6,7 +6,7 @@ class MysqliManager
 
     function __construct()
     {
-        $this->connect = new mysqli('localhost', 'mcsgg_tech', 'lCkleKdJNjJucPHE', 'mcsgg_tech');
+        $this->connect = new mysqli('localhost', 'user', 'pass', 'db');
 		$this->connect->query('SET NAMES \'utf8\'');
     }
 	
