@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   </head>
+   <body>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+         <!-- Modal content -->
+         <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="streetCard">
+               <title style="
+                  display: block;
+                  color: black;
+                  text-align: center;
+                  font-size: 36px;
+                  font-weight: 500;
+                  " id="streetTitle"></title>
+               <div class="streetDescription" style="display: flex;margin-top: 15px;margin-left: 33px;font-size: 16px;color: #3b3b3b;">
+                  <p>Rating:</p>
+                  <div class="streetProgress" style="
+                     margin-left: 15px;
+                     background-color:  #C4C4C4;
+                     max-height: 22px;
+                     width: 350px;
+                     font-size: 18px;
+                     text-align: center;
+                     margin-top: 2px;
+                     ">
+                     <div class="progressBar" id="progress">
+                        <p id="rating"></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="userView" id="userViewId">
+            </div>
+         </div>
+      </div>
+      </style>
+      <title>Drug Usage Predictor</title>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+      <script
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMqapYQeRa1U0L3KFqtuxJ9aSxrE4QU5s&callback=initMap&libraries=&v=weekly"
+         defer
+         ></script>
+      <link rel="stylesheet" type="text/css" href="./styles/css/main.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/mapStyle.js"></script>
+      </head>
+      <body>
+         <div id="map"></div>
+   </body>
+</html>
